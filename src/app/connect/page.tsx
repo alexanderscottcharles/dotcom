@@ -40,7 +40,7 @@ export default function ConnectPage() {
       <div className="grid grid-cols-2 gap-6 max-w-5xl mx-auto">
 
         <p> Resonate</p>
-        <p> The Writer's List</p>
+        <p> The Writers List</p>
         <p> TWL Tracking Board </p>
         <p>ASC Tuoring</p>
 
