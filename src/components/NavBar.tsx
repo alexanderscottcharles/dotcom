@@ -14,7 +14,7 @@ const NavBar = () => {
 
     <div className="p-8"> <p className="text-4xl hover:bg-gray-300 rounded-xl"> <Link href="/">Alexander Scott Charles</Link></p></div>
     <div className="flex space-x-8 p-8">
-          <div><p className="text-4xl hover:bg-gray-300 rounded-xl"><Link href="/titles" > Newsletter</Link></p></div>
+          <div><p className="text-4xl hover:bg-gray-300 rounded-xl"><Link href="/newsletter" > Newsletter</Link></p></div>
       <div><p className="text-4xl hover:bg-gray-300 rounded-xl"><Link href="/titles" > Titles</Link></p></div>
       <div><p className="text-4xl hover:bg-gray-300 rounded-xl"><Link href="/events"> Events</Link></p></div>
       <div><p className="text-4xl hover:bg-gray-300 rounded-xl"><Link href="/connect">Connect</Link></p></div>
@@ -33,7 +33,7 @@ const NavBar = () => {
   
   <div className={mobileNav ? 'block' : 'hidden'}>
     <ul>
-       <li><Link href="/titles" onClick={() => openMobileNav(false)}><p className="text-center text-2xl hover:bg-gray-300">Newsletter</p></Link></li>
+       <li><Link href="/newsletter" onClick={() => openMobileNav(false)}><p className="text-center text-2xl hover:bg-gray-300">Newsletter</p></Link></li>
     <li><Link href="/titles" onClick={() => openMobileNav(false)}><p className="text-center text-2xl hover:bg-gray-300">Titles</p></Link></li>
     <li><Link href="/events" onClick={() => openMobileNav(false)}><p className="text-center text-2xl hover:bg-gray-300">Events</p></Link></li>
    <li> <Link href="/connect" onClick={() => openMobileNav(false)}><p className="text-center text-2xl hover:bg-gray-300">Connect</p></Link> </li></ul>
