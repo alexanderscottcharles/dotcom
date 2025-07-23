@@ -3,6 +3,7 @@
 import React, {useState} from 'react'
 import HamburgerMenu from './HamburgerMenu'
 import Link from 'next/link'
+import Signature from './Signature'
 
 const NavBar = () => {
   const [mobileNav, openMobileNav] = useState(false)
@@ -12,7 +13,7 @@ const NavBar = () => {
       <div className="hidden md:block w-full">
   <div className="flex justify-between items-center px-8"> 
 
-    <div className="p-8"> <p className="text-4xl hover:bg-gray-300 rounded-xl"> <Link href="/">Alexander Scott Charles</Link></p></div>
+    <div className=""> <p className="text-4xl hover:bg-gray-300 rounded-xl"> <Link href="/"><div className="my-8 -mb-1"><Signature /></div></Link></p></div>
     <div className="flex space-x-8 p-8">
           <div><p className="text-4xl hover:bg-gray-300 rounded-xl"><Link href="/newsletter" > Newsletter</Link></p></div>
       <div><p className="text-4xl hover:bg-gray-300 rounded-xl"><Link href="/titles" > Titles</Link></p></div>
