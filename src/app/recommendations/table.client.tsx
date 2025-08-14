@@ -18,14 +18,7 @@ export default function ClientRecommendationsTable({ initialData, }: { initialDa
     )
   }, [initialData, search])
 
-  const fmt = (iso: string) => {
-    try {
-      return new Intl.DateTimeFormat(undefined, { year: 'numeric', month: 'long', day: 'numeric' })
-        .format(new Date(iso))
-    } catch {
-      return iso
-    }
-  }
+
 
   return (
     <div className="min-h-screen bg-white">
